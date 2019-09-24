@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/testing123', function () {
+    return view('adminpanel.layouts.app');
+});
