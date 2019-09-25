@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.mainlayout');
 });
 Route::get('/testing123', function () {
     return view('adminpanel.layouts.app');

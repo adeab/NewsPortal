@@ -19,7 +19,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  <!-- Bootstrap Core CSS -->
 <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
-<link href="{{ asset('css/style.css') }}" rel='stylesheet' type='text/css' />
+<link href="{{ asset('backend/css/style.css') }}" rel='stylesheet' type='text/css' />
 <!-- Graph CSS -->
 <link href="{{ asset('backend/css/lines.css') }}" rel='stylesheet' type='text/css' />
 <link href="{{ asset('backend/css/font-awesome.css') }}" rel="stylesheet"> 
@@ -65,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 						<li class="avatar">
 							<a href="#">
-								<img src="images/1.png" alt=""/>
+								<img src="{{ asset('backend/images/1.png') }}" alt=""/>
 								<div>New message</div>
 								<small>1 minute ago</small>
 								<span class="label label-info">NEW</span>
@@ -73,7 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 						<li class="avatar">
 							<a href="#">
-								<img src="images/2.png" alt=""/>
+								<img src="{{ asset('backend/images/2.png') }}" alt=""/>
 								<div>New message</div>
 								<small>1 minute ago</small>
 								<span class="label label-info">NEW</span>
@@ -81,28 +81,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 						<li class="avatar">
 							<a href="#">
-								<img src="images/3.png" alt=""/>
+								<img src="{{ asset('backend/images/3.png') }}" alt=""/>
 								<div>New message</div>
 								<small>1 minute ago</small>
 							</a>
 						</li>
 						<li class="avatar">
 							<a href="#">
-								<img src="images/4.png" alt=""/>
+								<img src="{{ asset('backend/images/4.png') }}" alt=""/>
 								<div>New message</div>
 								<small>1 minute ago</small>
 							</a>
 						</li>
 						<li class="avatar">
 							<a href="#">
-								<img src="images/5.png" alt=""/>
+								<img src="{{ asset('backend/images/5.png') }}" alt=""/>
 								<div>New message</div>
 								<small>1 minute ago</small>
 							</a>
 						</li>
 						<li class="avatar">
 							<a href="#">
-								<img src="images/pic1.png" alt=""/>
+								<img src="{{ asset('backend/images/pic1.png') }}" alt=""/>
 								<div>New message</div>
 								<small>1 minute ago</small>
 							</a>
@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	        		</ul>
 	      		</li>
 			    <li class="dropdown">
-	        		<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="images/1.png"><span class="badge">9</span></a>
+	        		<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="{{ asset('backend/images/1.png') }}"><span class="badge">9</span></a>
 	        		<ul class="dropdown-menu">
 						<li class="dropdown-menu-header text-center">
 							<strong>Account</strong>
@@ -269,7 +269,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		        <div class="scrollbar" id="style-2">
                    <div class="activity-row">
 	                 <div class="col-xs-1"><i class="fa fa-thumbs-up text-info icon_13"> </i>  </div>
-	                 <div class="col-xs-3 activity-img"><img src='images/5.png' class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-3 activity-img"><img src="{{ asset('backend/images/5.png') }}" class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
 	                 	<h5><a href="#">Lorem Ipsum</a> liked <a href="#">random</a></h5>
 	                    <p>Lorem Ipsum is simply dummy</p>
@@ -279,7 +279,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
 	  			    <div class="activity-row">
 	                 <div class="col-xs-1"><i class="fa fa-comment text-info"></i> </div>
-	                 <div class="col-xs-3 activity-img"><img src='images/3.png' class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-3 activity-img"><img src="{{ asset('backend/images/3.png') }}" class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
 	                 	<h5><a href="#">simply random</a> liked <a href="#">passages</a></h5>
 	                    <p>Lorem Ipsum is simply dummy</p>
@@ -289,7 +289,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="activity-row">
 	                 <div class="col-xs-1"><i class="fa fa-check text-info icon_11"></i></div>
-	                 <div class="col-xs-3 activity-img"><img src='images/1.png' class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-3 activity-img"><img src="{{ asset('backend/images/1.png') }}" class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
 	                 	<h5><a href="#">standard chunk</a> liked <a href="#">model</a></h5>
 	                    <p>Lorem Ipsum is simply dummy</p>
@@ -299,7 +299,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="activity-row1">
 	                 <div class="col-xs-1"><i class="fa fa-user text-info icon_12"></i></div>
-	                 <div class="col-xs-3 activity-img"><img src='images/4.png' class="img-responsive" alt=""/></div>
+	                 <div class="col-xs-3 activity-img"><img src="{{ asset('backend/images/4.png') }}" class="img-responsive" alt=""/></div>
 	                 <div class="col-xs-8 activity-desc">
 	                 	<h5><a href="#">perspiciatis</a> liked <a href="#">donating</a></h5>
 	                    <p>Lorem Ipsum is simply dummy</p>
@@ -546,9 +546,7 @@ var detail = new Rickshaw.Graph.HoverDetail({
 		</div>
 		<div class="clearfix"> </div>
 	    </div>
-		<div class="copy">
-            <p>Copyright &copy; 2015 Modern. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-	    </div>
+		
 		</div>
        </div>
       <!-- /#page-wrapper -->
